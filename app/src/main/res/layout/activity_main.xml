@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gabrielarroyave.practica1_1.MainActivity"
+    android:background="#90ee90"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/titulo"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/seleccionar"
+            android:textColor="@color/darkslateblue"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="horizontal">
+
+
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rRadiogroup">
+
+        <RadioButton
+            android:id="@+id/rCuadrado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cuadro" />
+
+        <RadioButton
+            android:id="@+id/rCirculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/circulo" />
+
+        <RadioButton
+            android:id="@+id/rTriangulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/triangulo" />
+
+        <RadioButton
+            android:id="@+id/rCubo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cubo" />
+        </RadioGroup>
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tRadio"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/eRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Medida del radio en cm"
+                android:inputType="number"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lado1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tLado1"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/eLado1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Medida en cm"
+                android:inputType="number"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lado2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tLado2"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/eLado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Medida en cm"
+                android:inputType="number"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lado3"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tLado3"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:id="@+id/eLado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Medida en cm"
+                android:inputType="number"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/bCalcular"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/navy"
+                android:onClick="fCalcular"
+                android:text="@string/calcular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            >
+
+        <TextView
+            android:id="@+id/tResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
